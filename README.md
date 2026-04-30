@@ -86,7 +86,7 @@ https://miro.com/app/board/uXjVHaJKq2s=/?share_link_id=687978719019
 ## 🎥 Demo Video
 
 👉 Watch full demo here:
-https://drive.google.com/file/d/1bwQO-NOyZJVZdMAb3ro2MfxowCUpousV/view?usp=sharing
+https://drive.google.com/file/d/1CAY8hvycyePA4PGoB1y7owUf-wPurb51/view?usp=sharing
 
 ---
 
