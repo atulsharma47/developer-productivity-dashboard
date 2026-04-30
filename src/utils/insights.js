@@ -19,7 +19,7 @@ export function generateInsights(metrics, previousMetrics) {
     const leadDiff = metrics.leadTime - previousMetrics.leadTime;
     const bugDiff = metrics.bugRate - previousMetrics.bugRate;
 
-    // 🔴 Negative trends (only if significant)
+    // 🔴 Negative trends
     if (cycleDiff > CYCLE_THRESHOLD) {
       insights.push("Cycle time increased compared to last month");
       suggestions.push("Investigate why tasks are taking longer.");
@@ -35,17 +35,20 @@ export function generateInsights(metrics, previousMetrics) {
       suggestions.push("Check for delays in reviews or deployment pipeline.");
     }
 
-    // 🟢 Improvements (only if significant)
+    // 🟢 Improvements (NOW WITH SUGGESTIONS ✅)
     if (cycleDiff < -CYCLE_THRESHOLD && !hasInsight("cycle time")) {
       insights.push("Cycle time improved compared to last month");
+      suggestions.push("Maintain current workflow efficiency.");
     }
 
     if (bugDiff < -BUG_THRESHOLD && !hasInsight("bug")) {
       insights.push("Bug rate decreased, indicating improved code quality");
+      suggestions.push("Continue strong testing and review practices.");
     }
 
     if (leadDiff < -LEAD_THRESHOLD && !hasInsight("lead time")) {
       insights.push("Lead time decreased, improving delivery speed");
+      suggestions.push("Sustain deployment and review efficiency.");
     }
   }
 
@@ -80,11 +83,17 @@ export function generateInsights(metrics, previousMetrics) {
   suggestions = [...new Set(suggestions)];
 
   // ===============================
-  // 🔹 5. Healthy fallback
+  // 🔹 5. Ensure suggestions are NEVER empty ✅
+  // ===============================
+  if (suggestions.length === 0) {
+    suggestions.push("Continue current development practices.");
+  }
+
+  // ===============================
+  // 🔹 6. Healthy fallback
   // ===============================
   if (insights.length === 0) {
     insights.push("All metrics are stable and within a healthy range");
-    suggestions.push("Continue current development practices.");
   }
 
   return {
