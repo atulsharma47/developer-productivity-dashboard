@@ -1,124 +1,130 @@
 # 🚀 Developer Productivity Dashboard
 
-Track developer performance, identify risks, and generate actionable insights using engineering data.
+A smart dashboard that transforms engineering data into actionable insights — helping teams improve delivery speed, code quality, and developer productivity.
 
 ---
 
 ## 🎯 Problem
 
-Engineering teams often lack clear visibility into:
+Engineering teams often struggle with:
 
-* Developer productivity
-* Code quality trends
-* Delivery speed
+* Lack of visibility into developer performance
+* Difficulty identifying risks early
+* No clear insights from raw engineering data
 
-This makes it hard to identify risks early and improve performance.
+This leads to slower delivery, hidden quality issues, and inefficient decision-making.
 
 ---
 
 ## 💡 Solution
 
-This dashboard analyzes engineering data (Jira issues, deployments, pull requests, and bugs) to:
+This dashboard analyzes engineering signals (Jira issues, deployments, pull requests, and bugs) to:
 
-* Measure developer performance
-* Detect risky developers
-* Provide actionable insights
-* Enable data-driven decisions
+* 📊 Measure performance
+* ⚠️ Identify risky developers
+* 🧠 Generate actionable insights
+* 📈 Enable data-driven improvements
 
 ---
 
 ## ✨ Features
 
-* 📊 **Metrics Overview**
+### 📊 Metrics Overview
 
-  * Cycle Time
-  * Lead Time
-  * Pull Requests
-  * Deployments
-  * Bug Rate
+* Cycle Time
+* Lead Time
+* Pull Requests
+* Deployments
+* Bug Rate
 
-* ⚠️ **Risk Detection**
+### ⚠️ Risk Detection
 
-  * Identifies high-risk developers based on bug rate
+* Automatically identifies high-risk developers based on bug trends
 
-* 🧠 **Smart Insights**
+### 🧠 Smart Insights Engine
 
-  * Detects trends (increase/decrease in metrics)
-  * Provides actionable suggestions
+* Detects performance trends (increase/decrease)
+* Provides clear recommendations
 
-* 🔄 **Month-over-Month Comparison**
+### 🔄 Month-over-Month Analysis
 
-  * Tracks improvement or degradation
+* Tracks improvement or degradation over time
 
-* 👥 **Manager Summary**
+### 👥 Manager Summary
 
-  * Team averages
-  * Risky developer identification
+* Team-level averages
+* Risky developer identification
 
 ---
 
 ## 📸 Screenshots
 
-### Dashboard View
+### 🚀 Dashboard Overview
 
 ![Dashboard](./screenshots/dashboard.png)
 
-### Insights Section
+### 📊 Insights & Suggestions
 
 ![Insights](./screenshots/insights.png)
 
 ---
 
-## 🧠 System Design (Miro Board)
+## 🧠 System Design & User Flow
 
-View the system flow and user journey here:
-👉 [Miro Board Link](https://miro.com/app/board/uXjVHaJKq2s=/?share_link_id=687978719019)
+This project was designed using structured product thinking, covering:
+
+* User actions (Developers & Managers)
+* System behavior and data flow
+* Insights generation logic
+* Pain points and opportunities
+
+👉 View full Miro board:
+https://miro.com/app/board/uXjVHaJKq2s=/?share_link_id=687978719019
 
 ---
 
 ## 🎥 Demo Video
 
-Watch the complete demo here:
-👉 [Demo Video Link](https://drive.google.com/file/d/1bwQO-NOyZJVZdMAb3ro2MfxowCUpousV/view?usp=sharing)
+👉 Watch full demo here:
+https://drive.google.com/file/d/1bwQO-NOyZJVZdMAb3ro2MfxowCUpousV/view?usp=sharing
 
 ---
 
 ## 🧱 Tech Stack
 
-* React (Frontend)
-* Vite (Build Tool)
+* React
+* Vite
 * JavaScript
-* Mock API (simulated async data)
+* Mock API (simulated async behavior)
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open:
-http://localhost:5173
+Open: http://localhost:5173
 
 ---
 
 ## 📊 How It Works
 
-1. Select a developer and month
-2. System fetches data from mock API
-3. Metrics are calculated:
+1. Select developer and month
+2. Fetch data via mock API
+3. Compute metrics:
 
-   * Average cycle time
-   * Average lead time
+   * Cycle time
+   * Lead time
    * Bug rate
 4. Insights engine:
 
-   * Compares with previous month
+   * Compares with previous data
    * Detects trends
    * Generates suggestions
-5. Team summary:
+5. Team analytics:
 
    * Calculates team averages
    * Identifies risky developer
@@ -127,17 +133,17 @@ http://localhost:5173
 
 ## 💡 Key Idea
 
-Turn engineering data into actionable insights so developers and managers can make better decisions and continuously improve.
+Turn engineering data into actionable insights so developers and managers can make smarter decisions and continuously improve performance.
 
 ---
 
 ## 🚀 Future Improvements
 
-* Integration with real APIs (Jira, GitHub)
-* Authentication system
-* Historical trend charts
+* Real API integration (Jira, GitHub)
+* Authentication & user roles
+* Historical trend visualizations
 * Team comparison dashboard
-* Export reports
+* Exportable reports
 
 ---
 
